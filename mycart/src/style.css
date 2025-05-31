@@ -1,0 +1,140 @@
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f1ee;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    /* Book Table */
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    table th, table td {
+        padding: 14px 12px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #5d3a00;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    table img {
+        width: 70px;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Buttons */
+    button {
+        background-color: #8e44ad;
+        color: #ffffff;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 4px 2px;
+    }
+
+    button:hover {
+        background-color: #732d91;
+    }
+
+    /* Inputs & Selects */
+    input[type="text"],
+    input[type="number"],
+    select {
+        padding: 8px 10px;
+        margin: 6px 0;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    /* Filter & Search */
+    .filter-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+        gap: 15px;
+    }
+
+    .filter-section div {
+        flex: 1;
+        min-width: 180px;
+    }
+
+    /* Pagination */
+    .pagination {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .pagination button {
+        background-color: #34495e;
+        margin: 0 5px;
+    }
+
+    .pagination button:hover {
+        background-color: #2c3e50;
+    }
+
+    /* Cart Table Specific */
+    .cart-table {
+        background-color: #ffffff;
+    }
+
+    /* Table Footer */
+    tfoot td {
+        font-weight: bold;
+        background-color: #f1e8dd;
+    }
+
+    /* Login Box */
+    .login-box {
+        max-width: 350px;
+        margin: 80px auto;
+        padding: 30px 25px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .login-box input {
+        width: 100%;
+        margin: 12px 0;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }

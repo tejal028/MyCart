@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Store</title>
+  <style>
+    .book {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      float: left;
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Store</h1>
+  <div id="books"></div>
+
+  <script>
+    fetch('/api/books')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('books');
+        data.forEach(book => {
+          container.innerHTML += `
+            <div class="book">
+              <img src="${book.image}" alt="${book.title}" />
+              <h3>${book.title}</h3>
+              <p><strong>Category:</strong> ${book.category}</p>
+              <p>${book.description}</p>
+              <p><strong>Price:</strong> ₹${book.price}</p>
+            </div>
+          `;
+        });
+      });
+  </script>
+</body>
+</html>
